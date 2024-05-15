@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Bloqueur de Domaine",
+  "version": "1.0",
+  "description": "Empêche les redirections ou ouvertures de nouveaux onglets vers des domaines différents",
+  "permissions": ["webNavigation", "storage", "tabs", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "assets/icon/iconGray_48.png"
+  },
+  "icons": {
+    "16": "assets/icon/icon_48.png",
+    "48": "assets/icon/icon_48.png",
+    "128": "assets/icon/icon.png"
+  }
+}
